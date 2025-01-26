@@ -52,7 +52,7 @@ Hexagonal architecture, also known as ports and adapters architecture, is a desi
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/go_gin_hexagonal.git
+    git clone https://github.com/szymonsitko/go_gin_hexagonal.git
     cd go_gin_hexagonal
     ```
 
@@ -75,10 +75,17 @@ Hexagonal architecture, also known as ports and adapters architecture, is a desi
 
 ## Testing
 
-To run the tests, use the following command:
+To run the tests, use the following scripts:
 ```sh
-    ./test.sh
+    ./test_unit.sh
 ```
+
+```sh
+    ./test_integration.sh
+```
+
+These testing scripts are using CLI interface for running unit and integration tests. This CLI utility has been compiled and attached to this repository
+within cmd/test folder (main.go/main binary).
 
 ## Conclusion
 
