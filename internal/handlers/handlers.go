@@ -6,16 +6,15 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/ssitko/hex-domain/internal/domain"
-	"github.com/ssitko/hex-domain/internal/services"
 )
 
 // Handler Layer
 // Handles HTTP requests and maps them to service calls.
 type AlbumHandler struct {
-	service *services.AlbumService
+	service domain.AlbumService
 }
 
-func NewAlbumHandler(service *services.AlbumService) *AlbumHandler {
+func NewAlbumHandler(service domain.AlbumService) *AlbumHandler {
 	return &AlbumHandler{service: service}
 }
 
